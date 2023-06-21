@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{44625F65-6CB4-4ABF-9552-4255A7161443}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FE95F848-DF63-465C-953F-1FE9E0414C84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAPrismGym.Services", "FAPrismGym\Services\FAPrismGym.Services\FAPrismGym.Services.csproj", "{4A3E7553-F639-4A20-9552-CA96D5DEBBCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAPrismGym.Services.Interfaces", "FAPrismGym\Services\FAPrismGym.Services.Interfaces\FAPrismGym.Services.Interfaces.csproj", "{F275B8BC-07F8-4297-B707-46253EF23160}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAPrismGym", "FAPrismGym\FAPrismGym\FAPrismGym.csproj", "{B9BEB86D-92D1-46D4-9902-4F83340E689E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAPrismGym.Core", "FAPrismGym\FAPrismGym.Core\FAPrismGym.Core.csproj", "{DDEFABA6-F931-451D-9118-E9587295526C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A3E7553-F639-4A20-9552-CA96D5DEBBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A3E7553-F639-4A20-9552-CA96D5DEBBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A3E7553-F639-4A20-9552-CA96D5DEBBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A3E7553-F639-4A20-9552-CA96D5DEBBCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F275B8BC-07F8-4297-B707-46253EF23160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F275B8BC-07F8-4297-B707-46253EF23160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F275B8BC-07F8-4297-B707-46253EF23160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F275B8BC-07F8-4297-B707-46253EF23160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9BEB86D-92D1-46D4-9902-4F83340E689E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9BEB86D-92D1-46D4-9902-4F83340E689E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9BEB86D-92D1-46D4-9902-4F83340E689E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9BEB86D-92D1-46D4-9902-4F83340E689E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEFABA6-F931-451D-9118-E9587295526C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEFABA6-F931-451D-9118-E9587295526C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEFABA6-F931-451D-9118-E9587295526C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEFABA6-F931-451D-9118-E9587295526C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A3E7553-F639-4A20-9552-CA96D5DEBBCA} = {FE95F848-DF63-465C-953F-1FE9E0414C84}
+		{F275B8BC-07F8-4297-B707-46253EF23160} = {FE95F848-DF63-465C-953F-1FE9E0414C84}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE5E59A0-BF5C-48AF-A123-CC60D551281F}
+	EndGlobalSection
+EndGlobal
