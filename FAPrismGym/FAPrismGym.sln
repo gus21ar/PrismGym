@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAPrismGym", "FAPrismGym\FA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAPrismGym.Core", "FAPrismGym\FAPrismGym.Core\FAPrismGym.Core.csproj", "{DDEFABA6-F931-451D-9118-E9587295526C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAPrismGym.Module.Auxiliares", "FAPrismGym.Module.Auxiliares\FAPrismGym.Module.Auxiliares.csproj", "{A13B24CF-7CF5-4004-B2E7-7EDAE86C7AFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{DDEFABA6-F931-451D-9118-E9587295526C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDEFABA6-F931-451D-9118-E9587295526C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDEFABA6-F931-451D-9118-E9587295526C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13B24CF-7CF5-4004-B2E7-7EDAE86C7AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13B24CF-7CF5-4004-B2E7-7EDAE86C7AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13B24CF-7CF5-4004-B2E7-7EDAE86C7AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13B24CF-7CF5-4004-B2E7-7EDAE86C7AFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4A3E7553-F639-4A20-9552-CA96D5DEBBCA} = {FE95F848-DF63-465C-953F-1FE9E0414C84}
 		{F275B8BC-07F8-4297-B707-46253EF23160} = {FE95F848-DF63-465C-953F-1FE9E0414C84}
+		{A13B24CF-7CF5-4004-B2E7-7EDAE86C7AFD} = {44625F65-6CB4-4ABF-9552-4255A7161443}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE5E59A0-BF5C-48AF-A123-CC60D551281F}

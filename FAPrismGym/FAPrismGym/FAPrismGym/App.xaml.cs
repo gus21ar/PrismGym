@@ -1,4 +1,5 @@
-﻿using FAPrismGym.Services;
+﻿using FAPrismGym.Module.Auxiliares;
+using FAPrismGym.Services;
 using FAPrismGym.Services.Interfaces;
 using FAPrismGym.Views;
 using Prism.Ioc;
@@ -14,7 +15,7 @@ namespace FAPrismGym
 	{
 		protected override Window CreateShell()
 		{
-			return Container.Resolve<MainWindow>();
+			return Container.Resolve<Shell>();
 		}
 
 		protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -24,7 +25,7 @@ namespace FAPrismGym
 
 		protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
 		{
-			
+			moduleCatalog.AddModule<AuxiliaresModule>();
 		}
 	}
 }
