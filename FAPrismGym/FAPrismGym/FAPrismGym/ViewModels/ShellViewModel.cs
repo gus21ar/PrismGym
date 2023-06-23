@@ -13,8 +13,7 @@ namespace FAPrismGym.ViewModels
 		{
 			manager.RegisterViewWithRegion(RegionNames.TitleRegion, typeof(PUCTitleBar));
 			manager.RegisterViewWithRegion(RegionNames.NavegateRegion, typeof(PUCNavigateBar));
-			//manager.RegisterViewWithRegion("TitleRegion", "TitleBar");
-			//manager.RegisterViewWithRegion(RegionNames.NavegateRegion, ViewNames.NavigateBar);
+			manager.RegisterViewWithRegion(RegionNames.CloseRegion, typeof(PUCClose));
 		}
 	}
 }

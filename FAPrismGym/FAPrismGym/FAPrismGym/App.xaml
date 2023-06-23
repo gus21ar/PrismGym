@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:FAPrismGym"
              xmlns:prism="http://prismlibrary.com/" >
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Diccionarios/DColores.xaml"/>
+                <ResourceDictionary Source="Diccionarios/DBrochas.xaml"/>
+                <ResourceDictionary Source="Diccionarios/DTextos.xaml"/>
+                <ResourceDictionary Source="Diccionarios/DBotones.xaml"/>
+                <ResourceDictionary Source="Diccionarios/DVarios.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>

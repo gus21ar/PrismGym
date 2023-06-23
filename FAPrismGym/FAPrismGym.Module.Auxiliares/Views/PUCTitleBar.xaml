@@ -6,6 +6,6 @@
              Height="50" Width="Auto" Margin="10">
 
     <StackPanel Orientation="Horizontal">
-        <TextBlock Text="{Binding Titulo}"/>
+        <TextBlock Text="{Binding Titulo}" Style="{DynamicResource TextTitulo}"/>
     </StackPanel>
 </UserControl>

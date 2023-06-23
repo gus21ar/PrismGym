@@ -5,9 +5,9 @@
              prism:ViewModelLocator.AutoWireViewModel="True"
              Height="50" Width="Auto" Margin="10">
     <StackPanel Orientation="Horizontal" >
-        <Button Content="Back" Padding="5" Margin="5"/>
-        <Button Content="Home" Padding="5" Margin="0,5,0,5"/>
-        <Button Content="Next" Padding="5" Margin="5,5,0,5"/>
-        <Button Content="Cancel" Padding="5" Margin="5"/>
+        <Button Content="Back" Padding="5" Margin="5" Style="{DynamicResource BSPrincipal}"/>
+        <Button Content="Home" Padding="5" Margin="0,5,0,5" Style="{DynamicResource BSPrincipal}"/>
+        <Button Content="Next" Padding="5" Margin="5,5,0,5" Style="{DynamicResource BSPrincipal}"/>
+        <Button Content="Cancel" Padding="5" Margin="5" Style="{DynamicResource BSPrincipal}"/>
     </StackPanel>
 </UserControl>

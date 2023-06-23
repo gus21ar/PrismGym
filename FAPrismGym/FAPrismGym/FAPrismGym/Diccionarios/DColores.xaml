@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Color x:Key="CFondoVentana" >#c42348</Color>
+    <Color x:Key="CFondoBoton" >#d91e36</Color>
+    <Color x:Key="CFondoBotonPresionado" >#da344d</Color>
+    <Color x:Key="CFondoBotonDesactivado" >#7e6c6c</Color>
+    <Color x:Key="CFondoBorde" >#ec5766</Color>
+    <Color x:Key="CFondoBordeAlternativo" >#ef7674</Color>
+    <Color x:Key="CFuente" >#ffffff</Color>
+    <Color x:Key="CFuenteAlternativa" >#ffc857</Color>
+    <FontFamily x:Key="FPrincipal" >Georgia</FontFamily>
+</ResourceDictionary>

@@ -16,6 +16,7 @@ namespace FAPrismGym.Module.Auxiliares
 		{
 			containerRegistry.RegisterForNavigation<PUCNavigateBar>();
 			containerRegistry.RegisterForNavigation<PUCTitleBar>();
+			containerRegistry.RegisterForNavigation<PUCClose>();
 		}
 	}
 }

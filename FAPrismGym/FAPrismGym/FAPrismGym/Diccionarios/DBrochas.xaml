@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="BFondoVentana" Color="{DynamicResource CFondoVentana}"/>
+    <SolidColorBrush x:Key="BFondoBoton" Color="{DynamicResource CFondoBoton}"/>
+    <SolidColorBrush x:Key="BFondoBotonPresionado" Color="{DynamicResource CFondoBotonPresionado}"/>
+    <SolidColorBrush x:Key="BFondoBotonDesactivado" Color="{DynamicResource CFondoBotonDesactivado}"/>
+    <SolidColorBrush x:Key="BFondoBorde" Color="{DynamicResource CFondoBorde}"/>
+    <SolidColorBrush x:Key="BFondoBordeAlternativo" Color="{DynamicResource CFondoBordeAlternativo}"/>
+    <SolidColorBrush x:Key="BFuente" Color="{DynamicResource CFuente}"/>
+    <SolidColorBrush x:Key="BFuenteAlternativa" Color="{DynamicResource CFuenteAlternativa}"/>
+</ResourceDictionary>

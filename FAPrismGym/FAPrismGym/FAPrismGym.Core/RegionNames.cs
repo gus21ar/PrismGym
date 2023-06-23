@@ -5,5 +5,6 @@
 		public const string ContentRegion = "ContentRegion";
 		public const string TitleRegion = "TitleRegion";
 		public const string NavegateRegion = "NavegateRegion";
+		public const string CloseRegion = "CloseRegion";
 	}
 }
