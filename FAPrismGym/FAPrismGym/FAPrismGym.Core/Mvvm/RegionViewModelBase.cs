@@ -1,35 +1,48 @@
-﻿using Prism.Regions;
+﻿using FAPrismGym.Services.Interfaces;
+using Prism.Regions;
 using System;
 
 namespace FAPrismGym.Core.Mvvm
 {
-	public class RegionViewModelBase : ViewModelBase, INavigationAware, IConfirmNavigationRequest
+	public class RegionViewModelBase : ViewModelBase, INavegationPG
 	{
 		protected IRegionManager RegionManager { get; private set; }
 
-		public RegionViewModelBase(IRegionManager regionManager)
+		protected INavegadorPG ONavegador { get; set; }
+
+		public RegionViewModelBase(IRegionManager regionManager, INavegadorPG navegadorPG)
 		{
 			RegionManager = regionManager;
+			ONavegador = navegadorPG;
 		}
 
-		public virtual void ConfirmNavigationRequest(NavigationContext navigationContext, Action<bool> continuationCallback)
+		public void NavigateBack()
 		{
-			continuationCallback(true);
+			var nave = ONavegador.Back();
+			if (nave != null)
+			{
+				NavigateTo(nave.RegionName, nave.ViewName);
+			}
 		}
 
-		public virtual bool IsNavigationTarget(NavigationContext navigationContext)
+		public void NavigateNext()
 		{
-			return true;
+			var nave = ONavegador.Fowar();
+			if (nave != null)
+			{
+				NavigateTo(nave.RegionName, nave.ViewName);
+			}
 		}
 
-		public virtual void OnNavigatedFrom(NavigationContext navigationContext)
+		public void NavigateHome()
 		{
-
+			ONavegador.Add(RegionNames.ContentRegion, ViewNames.MenuInicial);
+			NavigateTo(RegionNames.ContentRegion, ViewNames.MenuInicial);
 		}
 
-		public virtual void OnNavigatedTo(NavigationContext navigationContext)
+		public void NavigateTo(string regionName, string viewName)
 		{
-
+			throw new NotImplementedException();
 		}
 	}
 }

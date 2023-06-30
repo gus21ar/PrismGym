@@ -5,8 +5,8 @@
              prism:ViewModelLocator.AutoWireViewModel="True"
              Height="75" Width="150">
     <StackPanel Orientation="Horizontal">
-        <Button Content="-" Margin="5" Height="65" Width="40" Style="{DynamicResource BSPrincipal}" Command="{Binding MinimizeCommand}"/>
-        <Button Content="0" Margin="5" Height="65" Width="40" Style="{DynamicResource BSPrincipal}" Command="{Binding MinimizeCommand}"/>
-        <Button Content="X" Margin="5" Height="65" Width="40" Style="{DynamicResource BSPrincipal}" Command="{Binding MinimizeCommand}"/>
+        <Button Content="-" Margin="5" Height="34" Width="40" Style="{DynamicResource BSPrincipal}" Command="{Binding MinimizeCommand}"/>
+        <Button Content="0" Margin="5" Height="34" Width="40" Style="{DynamicResource BSPrincipal}" Command="{Binding MinimizeCommand}"/>
+        <Button Content="X" Margin="5" Height="34" Width="40" Style="{DynamicResource BSPrincipal}" Command="{Binding MinimizeCommand}"/>
     </StackPanel>
 </UserControl>

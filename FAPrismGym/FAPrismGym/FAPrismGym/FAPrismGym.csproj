@@ -9,6 +9,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\FAPrismGym.Module.Auxiliares\FAPrismGym.Module.Auxiliares.csproj" />
+    <ProjectReference Include="..\..\FAPrismGym.Module.Menu\FAPrismGym.Module.Menu.csproj" />
     <ProjectReference Include="..\FAPrismGym.Core\FAPrismGym.Core.csproj" />
     <ProjectReference Include="..\Services\FAPrismGym.Services.Interfaces\FAPrismGym.Services.Interfaces.csproj" />
     <ProjectReference Include="..\Services\FAPrismGym.Services\FAPrismGym.Services.csproj" />

@@ -5,5 +5,6 @@ namespace FAPrismGym.Core
 	{
 		public const string NavigateBar = "PUCNavigateBar";
 		public const string TitleBar = "PUCTitleBar";
+		public const string MenuInicial = "PUCMenuInicial";
 	}
 }

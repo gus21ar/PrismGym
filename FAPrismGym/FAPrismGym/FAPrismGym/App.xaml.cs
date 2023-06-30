@@ -1,4 +1,6 @@
-﻿using FAPrismGym.Module.Auxiliares;
+﻿using FAPrismGym.Core.Mvvm;
+using FAPrismGym.Module.Auxiliares;
+using FAPrismGym.Module.Menu;
 using FAPrismGym.Services;
 using FAPrismGym.Services.Interfaces;
 using FAPrismGym.Views;
@@ -21,11 +23,14 @@ namespace FAPrismGym
 		protected override void RegisterTypes(IContainerRegistry containerRegistry)
 		{
 			containerRegistry.RegisterSingleton<IMessageService, MessageService>();
+			containerRegistry.Register<INodoNavigate, CNodoNavigate>();
+			containerRegistry.Register<INavegadorPG, CNavegadorPG>();
 		}
 
 		protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
 		{
 			moduleCatalog.AddModule<AuxiliaresModule>();
+			moduleCatalog.AddModule<MenuModule>();
 		}
 	}
 }
