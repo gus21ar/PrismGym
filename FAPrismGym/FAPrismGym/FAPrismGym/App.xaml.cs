@@ -22,9 +22,7 @@ namespace FAPrismGym
 
 		protected override void RegisterTypes(IContainerRegistry containerRegistry)
 		{
-			containerRegistry.RegisterSingleton<IMessageService, MessageService>();
-			containerRegistry.Register<INodoNavigate, CNodoNavigate>();
-			containerRegistry.Register<INavegadorPG, CNavegadorPG>();
+			containerRegistry.RegisterSingleton<IMessageService, MessageService>();			
 		}
 
 		protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)

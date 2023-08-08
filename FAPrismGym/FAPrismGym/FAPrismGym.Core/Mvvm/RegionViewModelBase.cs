@@ -4,45 +4,21 @@ using System;
 
 namespace FAPrismGym.Core.Mvvm
 {
-	public class RegionViewModelBase : ViewModelBase, INavegationPG
+	public class RegionViewModelBase : ViewModelBase
 	{
 		protected IRegionManager RegionManager { get; private set; }
+		
 
-		protected INavegadorPG ONavegador { get; set; }
-
-		public RegionViewModelBase(IRegionManager regionManager, INavegadorPG navegadorPG)
+		public RegionViewModelBase(IRegionManager regionManager)
 		{
-			RegionManager = regionManager;
-			ONavegador = navegadorPG;
+			RegionManager = regionManager;			
 		}
 
-		public void NavigateBack()
+		protected void NavigateToContentRegion(string viewName)
 		{
-			var nave = ONavegador.Back();
-			if (nave != null)
-			{
-				NavigateTo(nave.RegionName, nave.ViewName);
-			}
-		}
-
-		public void NavigateNext()
-		{
-			var nave = ONavegador.Fowar();
-			if (nave != null)
-			{
-				NavigateTo(nave.RegionName, nave.ViewName);
-			}
-		}
-
-		public void NavigateHome()
-		{
-			ONavegador.Add(RegionNames.ContentRegion, ViewNames.MenuInicial);
-			NavigateTo(RegionNames.ContentRegion, ViewNames.MenuInicial);
-		}
-
-		public void NavigateTo(string regionName, string viewName)
-		{
-			throw new NotImplementedException();
+			var myregion = RegionManager.Regions["ContentRegion"];
+			myregion.RemoveAll();
+			myregion.RequestNavigate(viewName);
 		}
 	}
 }

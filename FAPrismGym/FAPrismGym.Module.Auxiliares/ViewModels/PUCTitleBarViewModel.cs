@@ -13,7 +13,7 @@ namespace FAPrismGym.Module.Auxiliares.ViewModels
 			get { return titulo; }
 			set { SetProperty(ref titulo, value); }
 		}
-		public PUCTitleBarViewModel(IRegionManager regionManager, INavegadorPG navegador) : base(regionManager, navegador)
+		public PUCTitleBarViewModel(IRegionManager regionManager) : base(regionManager)
 		{
 			Titulo = "Prism Gym";
 		}

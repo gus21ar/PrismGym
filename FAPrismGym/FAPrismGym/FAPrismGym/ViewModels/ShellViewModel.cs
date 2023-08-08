@@ -10,8 +10,8 @@ namespace FAPrismGym.ViewModels
 {
 	public class ShellViewModel : RegionViewModelBase
 	{
-		public ShellViewModel(IRegionManager manager,INavegadorPG navegador )
-			:base(manager,navegador)
+		public ShellViewModel(IRegionManager manager )
+			:base(manager)
 		{
 			manager.RegisterViewWithRegion(RegionNames.TitleRegion, typeof(PUCTitleBar));
 			manager.RegisterViewWithRegion(RegionNames.NavegateRegion, typeof(PUCNavigateBar));

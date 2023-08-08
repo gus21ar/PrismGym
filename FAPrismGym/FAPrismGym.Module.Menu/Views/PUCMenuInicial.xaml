@@ -14,7 +14,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Button Content="Clientes" Style="{DynamicResource BSPrincipal}" Grid.Row="0" Grid.Column="0" Command="{Binding ClientesCommand}"/>
-        <Button Content="Asistencia" Style="{DynamicResource BSPrincipal}" Grid.Row="0" Grid.Column="1" Command="{Binding AsistenciaCommand}"/>
+        <Button Content="Asistencias" Style="{DynamicResource BSPrincipal}" Grid.Row="0" Grid.Column="1" Command="{Binding AsistenciasCommand}"/>
         <Button Content="Pagos" Style="{DynamicResource BSPrincipal}" Grid.Row="1" Grid.Column="0" Command="{Binding PagosCommand}"/>
         <Button Content="Reportes" Style="{DynamicResource BSPrincipal}" Grid.Row="1" Grid.Column="1" Command="{Binding ReportesCommand}"/>
     </Grid>
