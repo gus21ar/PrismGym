@@ -1,19 +1,15 @@
 ﻿using FAPrismGym.Core;
 using FAPrismGym.Core.Mvvm;
-using FAPrismGym.Services.Interfaces;
+using FAPrismGym.Services.Interfaces.ContentNavegation;
 using Prism.Commands;
-using Prism.Mvvm;
 using Prism.Regions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace FAPrismGym.Module.Menu.ViewModels
 {
 	public class PUCMenuInicialViewModel : RegionViewModelBase
 	{
-		public PUCMenuInicialViewModel(IRegionManager region)
-			:base(region)
+		public PUCMenuInicialViewModel(IRegionManager region,INavigateContent navigate)
+			:base(region, navigate)
 		{
 			IniciarComandos();		
 		}
@@ -51,7 +47,7 @@ namespace FAPrismGym.Module.Menu.ViewModels
 		}
 		void Clientes() 
 		{
-			NavigateToContentRegion(ViewNames.MenuClientes);
+			AddPage(ViewNames.MenuClientes);
 		}
 		void Asistencias() 
 		{ }

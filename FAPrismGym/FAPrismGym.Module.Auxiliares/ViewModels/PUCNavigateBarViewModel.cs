@@ -1,7 +1,6 @@
-﻿
-using FAPrismGym.Core;
+﻿using FAPrismGym.Core;
 using FAPrismGym.Core.Mvvm;
-using FAPrismGym.Services.Interfaces;
+using FAPrismGym.Services.Interfaces.ContentNavegation;
 using Prism.Commands;
 using Prism.Regions;
 
@@ -35,30 +34,23 @@ namespace FAPrismGym.Module.Auxiliares.ViewModels
 			set { SetProperty(ref cancelCommand, value); }
 		}
 		#endregion
-		public PUCNavigateBarViewModel(IRegionManager regionManager) : base(regionManager)
+		public PUCNavigateBarViewModel(IRegionManager regionManager,INavigateContent navigate) : base(regionManager, navigate)
 		{
 			IniciarComandos();
 		}
 		#region Metodos
 		private void IniciarComandos()
 		{
-			BackCommand = new(NavigateBack);
+			BackCommand = new(Back);
 			HomeCommand = new(NavigateHome);
-			NextCommand = new(NavigateNext);
+			NextCommand = new(Fowar);
 			cancelCommand = new(Cancel);
 		}		
-		private void NavigateBack()
-		{
-
-		}
 		private void NavigateHome()
 		{
-			NavigateToContentRegion(ViewNames.MenuInicial);
+			AddPage(ViewNames.MenuInicial);
 		}
-		private void NavigateNext()
-		{
-
-		}
+		
 		private void Cancel() { }
 		#endregion
 	}

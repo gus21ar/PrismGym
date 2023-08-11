@@ -2,16 +2,15 @@
 using FAPrismGym.Core.Mvvm;
 using FAPrismGym.Module.Auxiliares.Views;
 using FAPrismGym.Module.Menu.Views;
-using FAPrismGym.Services.Interfaces;
-using Prism.Mvvm;
+using FAPrismGym.Services.Interfaces.ContentNavegation;
 using Prism.Regions;
 
 namespace FAPrismGym.ViewModels
 {
 	public class ShellViewModel : RegionViewModelBase
 	{
-		public ShellViewModel(IRegionManager manager )
-			:base(manager)
+		public ShellViewModel(IRegionManager manager,INavigateContent navigate )
+			:base(manager, navigate)
 		{
 			manager.RegisterViewWithRegion(RegionNames.TitleRegion, typeof(PUCTitleBar));
 			manager.RegisterViewWithRegion(RegionNames.NavegateRegion, typeof(PUCNavigateBar));

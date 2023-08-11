@@ -1,5 +1,5 @@
 ﻿using FAPrismGym.Core.Mvvm;
-using FAPrismGym.Services.Interfaces;
+using FAPrismGym.Services.Interfaces.ContentNavegation;
 using Prism.Regions;
 
 
@@ -13,7 +13,7 @@ namespace FAPrismGym.Module.Auxiliares.ViewModels
 			get { return titulo; }
 			set { SetProperty(ref titulo, value); }
 		}
-		public PUCTitleBarViewModel(IRegionManager regionManager) : base(regionManager)
+		public PUCTitleBarViewModel(IRegionManager regionManager,INavigateContent navigate) : base(regionManager, navigate)
 		{
 			Titulo = "Prism Gym";
 		}
