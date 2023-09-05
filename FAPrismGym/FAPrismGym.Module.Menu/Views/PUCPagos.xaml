@@ -4,6 +4,25 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <Label Content="Pagos"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="{Binding Descripcion}" Style="{DynamicResource TextTitulo}"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <TextBlock Text="Importe:           " Style="{DynamicResource TextNormal}"/>
+            <TextBox Text="{Binding Importe}" Style="{DynamicResource Entrada}" MinWidth="100"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <TextBlock Text="Medio de Pago: " Style="{DynamicResource TextNormal}"/>
+            <ComboBox ItemsSource="{Binding Lista}" SelectedItem="{Binding MedioSelected}" MinWidth="100"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <Button Content="Cancelar" Command="{Binding CancelarCommand}" Style="{DynamicResource BSPrincipal}"/>
+            <Button Content="Pagar" Command="{Binding PagarCommand}" Style="{DynamicResource BSPrincipal}" Background="Green" Margin="10,0,0,0"/>
+        </StackPanel>
     </Grid>
 </UserControl>

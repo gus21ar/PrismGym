@@ -25,10 +25,11 @@
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}" Grid.Column="0"/>
+                <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.VisorRegion}" Grid.Column="1"/>
             </Grid>
         </Border>
         <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.NavegateRegion}" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock Text="{Binding TextoAMostrar}" Style="{DynamicResource TextNormal}" Grid.Column="0" Grid.Row="2"/>
     </Grid>
 </Window>

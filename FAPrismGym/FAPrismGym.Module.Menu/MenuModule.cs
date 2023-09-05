@@ -18,6 +18,7 @@ namespace FAPrismGym.Module.Menu
 			containerRegistry.RegisterForNavigation<PUCAsistencias>();
 			containerRegistry.RegisterForNavigation<PUCPagos>();
 			containerRegistry.RegisterForNavigation<PUCReportes>();
+			containerRegistry.RegisterForNavigation<PUCBuscar>();
 			
 		}
 	}

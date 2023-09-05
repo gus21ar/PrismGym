@@ -2,8 +2,10 @@
 using FAPrismGym.Module.Auxiliares;
 using FAPrismGym.Module.Menu;
 using FAPrismGym.Services;
+using FAPrismGym.Services.DataView;
 using FAPrismGym.Services.Interfaces;
 using FAPrismGym.Services.Interfaces.ContentNavegation;
+using FAPrismGym.Services.Interfaces.DataView;
 using FAPrismGym.Services.Navigate;
 using FAPrismGym.Views;
 using Prism.Ioc;
@@ -26,6 +28,7 @@ namespace FAPrismGym
 		{
 			containerRegistry.RegisterSingleton<IMessageService, MessageService>();		
 			containerRegistry.Register<INavigateContent,CNavigateContent>();
+			containerRegistry.Register<IPagosView, CPagosView>();
 		}
 
 		protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)

@@ -8,6 +8,7 @@ namespace FAPrismGym.Module.Menu.ViewModels
 {
 	public class PUCMenuInicialViewModel : RegionViewModelBase
 	{
+		string viewBuscada;
 		public PUCMenuInicialViewModel(IRegionManager region,INavigateContent navigate)
 			:base(region, navigate)
 		{
@@ -50,14 +51,17 @@ namespace FAPrismGym.Module.Menu.ViewModels
 			AddPage(ViewNames.MenuClientes);
 		}
 		void Asistencias() 
-		{ }
+		{
+			AddPage(ViewNames.Asistencias); 
+		}
 		void Pagos() 
 		{
-			
+			viewBuscada = ViewNames.Pagos;
+			AddPage(ViewNames.Buscar); 
 		}
 		void Reportes() 
 		{
-			
+			AddPage( ViewNames.Reportes);
 		}
 
 		#endregion

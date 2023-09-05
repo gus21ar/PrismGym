@@ -10,6 +10,7 @@ namespace FAPrismGym.Core
 		public const string Pagos = "PUCPagos";
 		public const string Reportes = "PUCReportes";
 		public const string Asistencias = "PUCAsistencias";
+		public const string Buscar = "PUCBuscar";
 
 	}
 }
